@@ -1,13 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script defer src="script.js"></script>
-</head>
-<body>
-    
-</body>
+    <style>
+      #main-container {
+        width: 400px;
+        height: 700px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(65, 187, 65);
+      }
+      #d1,
+      #d2,
+      #d3,
+      #d4,
+      #d10 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        background-color: lightgreen;
+      }
+      .d {
+        margin: 2px;
+        width: 350px;
+        border: 1px solid rgb(233, 222, 222);
+        border-radius: 4px;
+      }
+      #div1 {
+        margin: 20px 20px 20px 20px;
+      }
+      #div2 {
+        margin: 20px 20px 20px 20px;
+      }
+      #div3 {
+        margin: 20px 20px 20px 20px;
+      }
+      .l {
+        padding-left: 10px;
+      }
+      .in {
+        margin-right: 10px;
+      }
+      input,
+      textarea {
+        margin-right: 10px;
+      }
+      .cd {
+        text-align: left;
+        margin-left: 10px;
+      }
+      #d10 {
+        padding: 0px;
+        padding-top: 10px;
+        flex-direction: column;
+      }
+      #card-container {
+        display: flex;
+        margin-bottom: 10px;
+        gap: 15px;
+      }
+      #h1 {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div id="main-container">
+        <div id="div1">
+          <p id="h1"><b>Step-1:Your detail</b></p>
+          <div class="d" id="d1">
+            <lable class="l">Name</lable>
+            <input class="in" type="text" />
+          </div>
+          <div class="d" id="d2">
+            <lable class="l">E-mail</lable>
+            <input class="in" type="email" />
+          </div>
+          <div class="d" id="d3">
+            <lable class="l">Phone</lable>
+            <input class="in" type="number" />
+          </div>
+        </div>
+
+        <div id="div2">
+          <p><b>Step-1:Delivery address</b></p>
+          <div class="d" id="d1">
+            <lable class="l">Address</lable>
+            <textarea cols="19" rows="3"></textarea>
+          </div>
+          <div class="d" id="d2">
+            <lable class="l">Post code</lable>
+            <input class="in" type="number" />
+          </div>
+          <div class="d" id="d3">
+            <lable class="l">Country</lable>
+            <input class="in" type="tel" />
+          </div>
+        </div>
+
+        <div id="div3">
+          <p><b>Step-1:Card detail</b></p>
+          <div class="d" id="d10">
+            <div class="cd">Card type</div>
+            <div id="card-container">
+              <br /><label class="r1">visa</label>
+              <input class="in" type="radio" name="c" />
+
+              <label class="r1">AmEx</label>
+              <input class="in" type="radio" name="c" />
+
+              <label class="r1">Mastered card</label>
+              <input class="in" type="radio" name="c" />
+            </div>
+          </div>
+
+          <div class="d" id="d2">
+            <lable class="l">Card Number</lable>
+            <input class="in" type="number" />
+          </div>
+          <div class="d" id="d3">
+            <lable class="l">Security code</lable>
+            <input class="in" type="text" />
+          </div>
+          <div class="d" id="d4">
+            <lable class="l">Name on card</lable>
+            <input class="in" type="text" />
+          </div>
+
+          <button
+            style="
+              font-size: 13px;
+              margin-top: 7px;
+              color: white;
+              background-color: rgb(73, 138, 76);
+              padding: 7px;
+              border-radius: 10px;
+            "
+          >
+            Buy IT
+          </button>
+        </div>
+      </div>
+    </center>
+  </body>
 </html>
